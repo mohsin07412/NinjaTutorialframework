@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test automtion regression suite" parallel="tests" thread-count="2">
+
+<listeners>
+<listener class-name="com.qa.ninjatutorial.testlisteners.ExtentReportListener" />
+<listener class-name="com.qa.ninjatutorial.testlisteners.TestAllureListener" />
+</listeners>
+
+	<test name="loginPage Test">
+		<classes>
+			<class name="com.qa.ninjatutorial.Tests.AccountsloginTest" />
+		</classes>
+	</test>
+
+	<test name="AccountPage Test">
+		<classes>
+			<class name="com.qa.ninjatutorial.Tests.AccountsTest" />
+		</classes>
+	</test>
+
+	
+</suite>
